@@ -131,6 +131,6 @@ const apiUrl = 'http://YOUR_LOCAL_IP:8000/api';
 # Run app
 flutter run
 
-###MIT License © 2023 Abid. See LICENSE for details.
+MIT License © 2023 Abid. See LICENSE for details.
 
 
