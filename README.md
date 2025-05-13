@@ -97,7 +97,7 @@ XAMPP · Postman · Git
 ## Installation
 
 ### Backend Setup
-```bash
+
 # Clone repository
 git clone https://github.com/mrabid/Iot_Device_Trackr_Flutter_Laravel_Mysql.git
 cd Iot_Device_Trackr_Flutter_Laravel_Mysql/laravel_api
@@ -131,6 +131,6 @@ const apiUrl = 'http://YOUR_LOCAL_IP:8000/api';
 # Run app
 flutter run
 
-MIT License © 2023 Abid. See LICENSE for details.
+###MIT License © 2023 Abid. See LICENSE for details.
 
 
