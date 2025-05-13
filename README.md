@@ -2,7 +2,10 @@
 
 A cross-platform mobile app to monitor IoT devices and sensor data in real-time, with a Laravel backend API and MySQL database.
 
-![App Screenshot](screenshots/dashboard.png) *(Add your screenshot path here)*
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+
 
 ## 🚀 Features
 
@@ -32,24 +35,30 @@ A cross-platform mobile app to monitor IoT devices and sensor data in real-time,
 
 ## 📂 Project Structure
 
+```
 Iot_Device_Trackr_Flutter_Laravel_Mysql/
-├── flutter_app/ # Flutter frontend
-│ ├── lib/
-│ │ └── main.dart # Primary app code
-│ └── pubspec.yaml # Flutter dependencies
+├── flutter_app/                  # Flutter frontend
+│   ├── lib/
+│   │   └── main.dart             # Primary app code
+│   ├── pubspec.yaml              # Flutter dependencies
+│   └── ...                       # Other Flutter files
 │
-├── laravel_api/ # Laravel backend
-│ ├── app/Http/Controllers/ # API controllers
-│ ├── database/migrations/ # DB schemas
-│ └── routes/api.php # API endpoints
+├── laravel_api/                  # Laravel backend
+│   ├── app/
+│   │   └── Http/
+│   │       └── Controllers/      # API controllers
+│   ├── database/
+│   │   └── migrations/           # DB schemas
+│   ├── routes/
+│   │   └── api.php               # API endpoints
+│   ├── artisan                   # Laravel CLI entry point
+│   └── ...                       # Other Laravel files
 │
-└── screenshots/ # App visuals
+└── screenshots/                  # App visuals
+    └── demo1.png
+```
 
 
-# IoT Device Tracker
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
 A complete IoT monitoring solution with Flutter mobile app, Laravel API backend, and MySQL database.
 
@@ -110,3 +119,18 @@ php artisan migrate --seed
 
 # Start server
 php artisan serve --host=0.0.0.0 --port=8000
+
+cd ../flutter_app
+
+# Install dependencies
+flutter pub get
+
+# Configure API endpoint (lib/main.dart)
+const apiUrl = 'http://YOUR_LOCAL_IP:8000/api';
+
+# Run app
+flutter run
+
+MIT License © 2023 Abid. See LICENSE for details.
+
+
