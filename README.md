@@ -46,67 +46,67 @@ Iot_Device_Trackr_Flutter_Laravel_Mysql/
 └── screenshots/ # App visuals
 
 
-## 🛠️ Setup Guide
+# IoT Device Tracker
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
-### Prerequisites
-- Flutter SDK (≥3.0)
-- PHP (≥8.0) + Composer
-- MySQL (≥5.7)
-- XAMPP (for local hosting)
+A complete IoT monitoring solution with Flutter mobile app, Laravel API backend, and MySQL database.
+
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [API Reference](#api-reference)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+### Mobile App (Flutter)
+- Real-time device monitoring
+- Interactive data charts
+- Cross-platform (Android/iOS)
+- Local network connectivity
+
+### Backend (Laravel)
+- RESTful API endpoints
+- MySQL database integration
+- Authentication support
+- Data pagination
+
+## Tech Stack
+**Frontend:**  
+Flutter 3.x · Dart · HTTP Client  
+
+**Backend:**  
+Laravel 10.x · PHP 8.x · MySQL  
+
+**Development:**  
+XAMPP · Postman · Git  
+
+## Installation
 
 ### Backend Setup
 ```bash
-cd laravel_api
+# Clone repository
+git clone https://github.com/mrabid/Iot_Device_Trackr_Flutter_Laravel_Mysql.git
+cd Iot_Device_Trackr_Flutter_Laravel_Mysql/laravel_api
+
+# Install dependencies
 composer install
+
+# Configure environment
 cp .env.example .env
 php artisan key:generate
-Configure .env with your MySQL credentials:
 
-env
+# Set database credentials in .env
 DB_DATABASE=iot_tracker
 DB_USERNAME=root
 DB_PASSWORD=
-Run migrations:
 
-bash
+# Run migrations
 php artisan migrate --seed
-Start server:
 
-bash
+# Start server
 php artisan serve --host=0.0.0.0 --port=8000
-Frontend Setup
-bash
-cd flutter_app
-flutter pub get
-Update API base URL in lib/main.dart:
-
-dart
-Uri.parse('http://[YOUR_LOCAL_IP]:8000/api/devices')
-Run app:
-
-bash
-flutter run
-🌟 API Endpoints
-Endpoint	Method	Description
-/api/devices	GET	List all devices
-/api/devices/{id}	GET	Get device details
-/api/readings	POST	Store new sensor data
-📸 Screenshots
-Dashboard View	Device Details
-Dashboard	Details
-(Replace with your actual screenshots)
-
-🤝 Contributing
-Fork the project
-
-Create your branch (git checkout -b feature/your-feature)
-
-Commit changes (git commit -m 'Add feature')
-
-Push (git push origin feature/your-feature)
-
-Open a PR
-
-📜 License
-MIT © ABID
-
